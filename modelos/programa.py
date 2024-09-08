@@ -17,15 +17,16 @@ class Programa:
 █░▀░█ █ █▄▄ █▀▄ █▄█   ██▄ █▀▄ █▀▀
 ''')
         print('*' * 50)
-        print('')
 
     def menu(self):
         while True:
             print()
             print(f'1. Cadastrar Produtos')
-            print(f'2. Verificar Estoque de Produtos')
-            print(f'3. Realizar uma venda')
-            print(f'4. Sair')
+            print(f'2. Alterar Produtos [red](em desenvolvimento)')
+            print(f'3. Verificar Estoque de Produtos')
+            print(f'4. Realizar uma venda [red](em desenvolvimento)')
+            print(f'5. Relatorio de vendas [red](em desenvolvimento)')
+            print(f'6. Sair')
 
             opcao = int(input('Digite a opcao desejada: '))
             match opcao:
@@ -42,19 +43,27 @@ class Programa:
                         self.cabeçalho()
 
                 case 2:
+                    print('Função em desenvolvimento')
+
+                case 3:
                     self.cabeçalho()
                     print()
                     self.produtos.listar_produtos()
                     input(f'\nPressione enter para voltar ao menu')
                     self.cabeçalho()
 
-                case 3:
-                    print('função ainda não implementada')
                 case 4:
+                    print('função ainda não implementada')
+                
+                case 5:
+                    print('função ainda não implementada')
+            
+                case 6:
                     try:
                         self.conexao.close()
                     except:
                         pass
                     break
+                
                 case _:
                     print('Você digitou uma opcao invalida')
