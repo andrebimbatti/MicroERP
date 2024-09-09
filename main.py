@@ -12,7 +12,7 @@ def main():
         host='localhost',
         user='root',
         password = senha,
-        database = 'vendasimples',
+        database = 'micro_erp',
         cursorclass = pymysql.cursors.DictCursor
     )
 
