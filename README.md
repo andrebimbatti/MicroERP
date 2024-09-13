@@ -18,9 +18,24 @@ Windows<br>
 Python 3.12<br>
 MySQL ==> https://dev.mysql.com/downloads/installer/  (instale a versão full e anote a senha do usuario root que você criar)<br><br>
 
-Obs.: Nesta fase do projeto atual eu ainda não disponibilizei um arquivo de script do MySQL para criar o DB e as tabelas
-estou estudando uma forma ainda de disponibilizar isso de uma maneira que fique fácil para qualquer um instalar.
-Caso você saiba mexer no MySQL, deixarei em breve disponivel o código das tabelas
+
+<h2>Instalação</h2>
+
+1. Instalar o MySQL.
+2. Instalar o Python 3.12.6 ou +
+3. Rodar o arquivo install.py para configurar o banco de dados e senha para acessar o database do MySQL.
+4. Completado todas as estapas do install.py com sucesso, apenas execute o main.py para poder rodar a aplicação.
+
+<h2>Status do Projeto </h2>
+
+* Cadastrar Produtos ✔️
+* Alterar Produtos ✔️
+* Excluir Produtos ❌ (em desenvolvimento)
+* Verificar Estoque dos Produtos ✔️
+* Realizar Vendas ❌ (em desenvolvimento)
+* Relatorio de Vendas ❌ (em desenvolvimento)
+* Interface pelo Terminal ✔️
+* Interface Grafica ❌ (em desenvolvimento)
 
 # Desenvolvedor
 
