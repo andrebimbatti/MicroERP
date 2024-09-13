@@ -87,3 +87,20 @@ class Produtos:
                     
         except pymysql.MySQLError as e:
             print(f'Ocorreu um erro ao cadastrar o produto: {e}')
+    
+    def excluir_produtos(self):
+        self.listar_produtos()
+        opcao = input(f'\nDeseja mesmo excluir um produto? S/N? ').lower().strip()
+        if opcao == 's' or opcao == 'sim':
+            with self.conexao.cursor() as c:
+                    id_produto = input('\nDigite o id do item que deseja alterar: ')
+                    try:
+                        sql = f'DELETE FROM itens_venda WHERE id_produto = {id_produto}'
+                        c.execute(sql)
+                        sql = f'DELETE FROM produtos WHERE id_produto = {id_produto}'
+                        c.execute(sql)
+                        self.conexao.commit()
+                    except:
+                        print(f'Erro ao deletar o produto de ID: {id_produto}')
+        else:
+            pass
