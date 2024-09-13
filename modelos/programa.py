@@ -22,7 +22,7 @@ class Programa:
         while True:
             print()
             print(f'1. Cadastrar Produtos')
-            print(f'2. Alterar Produtos [red](em desenvolvimento)')
+            print(f'2. Alterar Produtos')
             print(f'3. Verificar Estoque de Produtos')
             print(f'4. Realizar uma venda [red](em desenvolvimento)')
             print(f'5. Relatorio de vendas [red](em desenvolvimento)')
@@ -43,7 +43,10 @@ class Programa:
                         self.cabeçalho()
 
                 case 2:
-                    print('Função em desenvolvimento')
+                    self.cabeçalho()
+                    self.produtos.alterar_produtos()
+                    input(f'\nPressione enter para voltar ao menu')
+                    self.cabeçalho()
 
                 case 3:
                     self.cabeçalho()
